@@ -1,0 +1,5 @@
+{
+  "name": "ATK KKT",
+  "description": "A comprehensive Office Stationery (ATK) Inventory system with role-based access, stock management, request workflows, and activity logging.",
+  "requestFramePermissions": []
+}
