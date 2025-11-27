@@ -44,7 +44,7 @@ const App: React.FC = () => {
       // Simulate network delay
       await new Promise(resolve => setTimeout(resolve, 800));
       
-      const loggedUser = await api.loginByEmail(email);
+      const loggedUser = await api.login(email, password);
       setUser(loggedUser);
       setCurrentPage(loggedUser.role === 'admin' ? 'dashboard' : 'user_dashboard');
     } catch (err: any) {

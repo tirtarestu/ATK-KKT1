@@ -1,9 +1,11 @@
+
 export type Role = 'admin' | 'user';
 
 export interface User {
   id: number;
   nama: string;
   email: string;
+  password?: string; // Optional because we might not return it in some API responses, but required for auth
   role: Role;
 }
 
